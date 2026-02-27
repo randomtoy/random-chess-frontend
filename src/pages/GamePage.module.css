@@ -1,0 +1,112 @@
+/* ── Page shell ───────────────────────────────── */
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Top bar ──────────────────────────────────── */
+.topBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  padding: var(--space-3) var(--space-5);
+  /* Fade out at scroll or just sit clean at top */
+  animation: fadeIn var(--duration-slow) var(--ease-out) both;
+}
+
+.topBarInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-5);
+  padding: 10px var(--space-4);
+  border-radius: var(--radius-pill);
+  width: 100%;
+  max-width: 520px;
+}
+
+.logo {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.topBarRight {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.gameId {
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--text-faint);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Main content ─────────────────────────────── */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* top padding accounts for fixed top bar */
+  padding: calc(56px + var(--space-10)) var(--space-4) var(--space-10);
+  gap: var(--space-6);
+}
+
+/* ── Board container ──────────────────────────── */
+.boardContainer {
+  width: min(480px, 100%);
+}
+
+/* ── Floating control panel ───────────────────── */
+.controlPanel {
+  width: min(480px, 100%);
+  padding: var(--space-5) var(--space-6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  animation: slideUp var(--duration-entrance) var(--ease-spring) 80ms both;
+  will-change: transform, opacity;
+}
+
+/* ── Panel inner text ─────────────────────────── */
+.hint {
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-weight: 400;
+}
+
+.errorText {
+  font-size: 13px;
+  color: var(--error);
+  flex: 1;
+}
+
+/* ── Error shake ──────────────────────────────── */
+.shake {
+  animation: shake 420ms var(--ease-out) both;
+}
+
+/* ── Responsive ───────────────────────────────── */
+@media (max-width: 540px) {
+  .controlPanel {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: var(--space-4) var(--space-5);
+  }
+
+  .topBarInner {
+    max-width: 100%;
+  }
+}

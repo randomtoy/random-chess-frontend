@@ -1,0 +1,11 @@
+# DEV environment overrides
+# Inherits all defaults from deployment/helm/random-chess-frontend/values.yaml
+# Namespace: random-chess
+
+imagePullSecrets:
+  - name: ghcr-random-chess
+
+ingress:
+  host: chess.randomtoy.dev
+  tls:
+    secretName: random-chess-frontend-tls

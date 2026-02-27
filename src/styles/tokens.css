@@ -1,0 +1,69 @@
+:root {
+  /* ── Backgrounds ─────────────────────────────── */
+  --bg-void: #060810;
+  --bg-canvas-from: #0c1020;
+  --bg-canvas-to: #060810;
+
+  /* ── Glass surfaces ───────────────────────────── */
+  --glass-bg: rgba(255, 255, 255, 0.035);
+  --glass-bg-hover: rgba(255, 255, 255, 0.058);
+  --glass-border: rgba(255, 255, 255, 0.07);
+  --glass-blur: 20px;
+
+  /* ── Accent — warm gold ───────────────────────── */
+  --accent: #c4a24a;
+  --accent-soft: rgba(196, 162, 74, 0.15);
+  --accent-glow: rgba(196, 162, 74, 0.22);
+  --accent-dim: rgba(196, 162, 74, 0.08);
+
+  /* ── Typography ───────────────────────────────── */
+  --text-primary: #ede8df;
+  --text-secondary: rgba(237, 232, 223, 0.55);
+  --text-faint: rgba(237, 232, 223, 0.22);
+
+  /* ── Semantic ─────────────────────────────────── */
+  --success: #5bb98c;
+  --success-dim: rgba(91, 185, 140, 0.12);
+  --error: #d96b6b;
+  --error-dim: rgba(217, 107, 107, 0.12);
+  --warning: #c98a4a;
+
+  /* ── Board squares ────────────────────────────── */
+  --board-sq-dark-a:  #090f1d;
+  --board-sq-dark-b:  #060c16;
+  --board-sq-light-a: rgba(148, 162, 210, 0.14);
+  --board-sq-light-b: rgba(108, 122, 175, 0.08);
+  --board-shadow:
+    0 48px 96px rgba(0, 0, 0, 0.7),
+    0 0 0 1px rgba(255, 255, 255, 0.04),
+    0 0 120px rgba(196, 162, 74, 0.08);
+
+  /* ── Spacing ──────────────────────────────────── */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 14px;
+  --space-4: 20px;
+  --space-5: 28px;
+  --space-6: 36px;
+  --space-8: 48px;
+  --space-10: 64px;
+
+  /* ── Radii ────────────────────────────────────── */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-pill: 999px;
+
+  /* ── Transitions ──────────────────────────────── */
+  /* Spring curve — premium, natural feel */
+  --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
+  /* Smooth decelerate */
+  --ease-out: cubic-bezier(0.0, 0.0, 0.2, 1);
+  /* Smooth accelerate */
+  --ease-in: cubic-bezier(0.4, 0.0, 1, 1);
+
+  --duration-fast: 140ms;
+  --duration-base: 260ms;
+  --duration-slow: 420ms;
+  --duration-entrance: 480ms;
+}

@@ -1,0 +1,9 @@
+Random Chess Frontend deployed successfully!
+
+{{- if .Values.ingress.enabled }}
+Access the application at:
+  https://{{ .Values.ingress.host }}
+{{- end }}
+
+To check the deployment status:
+  kubectl rollout status deployment/{{ include "random-chess-frontend.fullname" . }} -n {{ .Release.Namespace }}

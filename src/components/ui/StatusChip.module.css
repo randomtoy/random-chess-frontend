@@ -1,0 +1,52 @@
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: var(--radius-pill);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  transition: opacity var(--duration-base) var(--ease-out);
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ── Variants ─ */
+.neutral {
+  color: var(--text-secondary);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+}
+.neutral .dot { background: var(--text-faint); }
+
+.success {
+  color: var(--success);
+  background: var(--success-dim);
+  border: 1px solid rgba(91, 185, 140, 0.2);
+}
+.success .dot {
+  background: var(--success);
+  box-shadow: 0 0 6px var(--success);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.warning {
+  color: var(--warning);
+  background: rgba(201, 138, 74, 0.1);
+  border: 1px solid rgba(201, 138, 74, 0.2);
+}
+.warning .dot { background: var(--warning); }
+
+.error {
+  color: var(--error);
+  background: var(--error-dim);
+  border: 1px solid rgba(217, 107, 107, 0.2);
+}
+.error .dot { background: var(--error); }

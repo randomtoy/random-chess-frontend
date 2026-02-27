@@ -1,0 +1,13 @@
+# deps
+node_modules/
+
+# build output
+dist/
+
+# local env
+.env.local
+.env.*.local
+
+# editor
+.DS_Store
+*.local
