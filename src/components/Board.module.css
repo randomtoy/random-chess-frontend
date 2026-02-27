@@ -30,12 +30,12 @@
   transition: filter var(--duration-fast) var(--ease-out);
 }
 
-/* Black pieces: dark charcoal, grounded shadow */
+/* Black pieces: invert to white then dim to ~50% gray */
 .wrapper [data-piece^="b"] svg {
   filter:
-    brightness(0.75)
-    saturate(0)
-    drop-shadow(0 1px 6px rgba(0, 0, 0, 0.5));
+    invert(1)
+    brightness(0.52)
+    drop-shadow(0 1px 8px rgba(0, 0, 0, 0.7));
   transition: filter var(--duration-fast) var(--ease-out);
 }
 
@@ -50,9 +50,9 @@
 
 .wrapper [data-piece^="b"]:hover svg {
   filter:
-    brightness(0.85)
-    saturate(0)
-    drop-shadow(0 2px 9px rgba(0, 0, 0, 0.5));
+    invert(1)
+    brightness(0.62)
+    drop-shadow(0 2px 10px rgba(0, 0, 0, 0.6));
 }
 
 /* ── Loading overlay ───────────────────────────── */
