@@ -1,6 +1,6 @@
 # DEV environment overrides
 # Inherits all defaults from deployment/helm/random-chess-frontend/values.yaml
-# Namespace: random-chess
+# Namespace: random-chess-dev
 
 imagePullSecrets:
   - name: ghcr-random-chess

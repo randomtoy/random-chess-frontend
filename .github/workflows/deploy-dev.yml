@@ -61,5 +61,5 @@ jobs:
       environment: dev
       image_tag: ${{ needs.build-and-push.outputs.image_tag }}
       values_file: deployment/values-dev.yaml
-      namespace: random-chess
+      namespace: random-chess-dev
     secrets: inherit
