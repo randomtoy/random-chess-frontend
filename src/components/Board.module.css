@@ -33,9 +33,9 @@
 /* Black pieces: dark charcoal, grounded shadow */
 .wrapper [data-piece^="b"] svg {
   filter:
-    brightness(0.2)
+    brightness(0.58)
     saturate(0)
-    drop-shadow(0 1px 6px rgba(0, 0, 0, 0.65));
+    drop-shadow(0 1px 6px rgba(0, 0, 0, 0.5));
   transition: filter var(--duration-fast) var(--ease-out);
 }
 
@@ -50,9 +50,9 @@
 
 .wrapper [data-piece^="b"]:hover svg {
   filter:
-    brightness(0.3)
+    brightness(0.68)
     saturate(0)
-    drop-shadow(0 2px 9px rgba(0, 0, 0, 0.75));
+    drop-shadow(0 2px 9px rgba(0, 0, 0, 0.65));
 }
 
 /* ── Loading overlay ───────────────────────────── */
